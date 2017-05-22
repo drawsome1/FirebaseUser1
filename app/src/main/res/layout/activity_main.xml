@@ -1,0 +1,52 @@
+<!--
+  ~ Copyright (c) 2015-present, Parse, LLC.
+  ~ All rights reserved.
+  ~
+  ~ This source code is licensed under the BSD-style license found in the
+  ~ LICENSE file in the root directory of this source tree. An additional grant
+  ~ of patent rights can be found in the PATENTS file in the same directory.
+  -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="100dp"
+            android:id="@+id/TextViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/formTitle"
+            android:textSize="15pt">
+        </TextView>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/Write_a_message"
+            android:id="@+id/EditTextMessage"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="50dp"/>
+
+        <Button
+            android:id="@+id/Search"
+            android:layout_height="wrap_content"
+            android:text="@string/send"
+            android:onClick="sendMessage"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="50dp">
+        </Button>
+
+
+    </LinearLayout>
+</RelativeLayout>
